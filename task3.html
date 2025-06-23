@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindSpark Arena</title>
+  <link rel="stylesheet" href="task3.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <header>
+      <h1>MindSpark Arena</h1>
+      <p class="tagline">Sharpen your brain and crack a smile</p>
+    </header>
+
+    <section class="quiz-box">
+      <h2 class="section-title">🧠 Quiz Quest</h2>
+      <p id="question" class="quiz-question" aria-live="polite"></p>
+      <div id="options" class="choices"></div>
+      <button id="next-btn" class="btn next" disabled>Next →</button>
+      <p id="score" class="score-msg"></p>
+    </section>
+
+    <section class="joke-box">
+      <h2 class="section-title">😂 LOL Lab</h2>
+      <p id="joke-q" class="joke-q">Why did the tomato blush?</p>
+      <p id="joke-a" class="joke-a">Because it saw the salad dressing!</p>
+      <button class="btn joke" onclick="getAnotherJoke()">Get Another Joke</button>
+    </section>
+  </main>
+
+  <script src="task3.js"></script>
+</body>
+</html>
